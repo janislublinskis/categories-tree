@@ -17,17 +17,19 @@ Assert: https://packagist.org/packages/webmozart/assert<br>
 In your terminal go to folder, where you wish to clone this project,
 then enter command 'git clone https://github.com/underch3/categories-tree'
 
-**2. in terminal cd into categories-tree**
+**2. In terminal cd into categories-tree**
 
 **3. Install Composer Dependencies**
 ```
 With command 'composer install'
 ```
-**4. Fill config/database.php with required info**<br>
+**4. Copy config/database.dump.php to config/database.php**<br>
+Then fill with the required data
+
 **5. Execute sql files from /config/sql folder**
 
-Pre-made user in sql file users.sql:
-email: admin@sokapp
+Pre-made user in sql file users.sql:<br>
+email: admin@sokapp<br>
 password: Aa_00000
 
 Or use tables structures and then fill info manually.
@@ -38,11 +40,13 @@ It’s not a bad idea to check your database to make sure everything migrated th
 **I. If you want to use Register User and Reset Password features**
 
 Change creditentials in RegistrationController.php and PasswordController.php to your SMTP Settings in Mailtrap.io
-(For example choose Laravel as Integrations and you will see
-MAIL_USERNAME=d0ca269bd39eff
-MAIL_PASSWORD=0e97dd2dec24f5)
+<br>(<br>
+For example choose Laravel as Integrations and you will see:<br>
+MAIL_USERNAME=d0ca269bd39eff<br>
+MAIL_PASSWORD=0e97dd2dec24f5<br>
+)
 
-$mail->Username = 'MAIL_USERNAME';
+$mail->Username = 'MAIL_USERNAME';<br>
 $mail->Password = 'MAIL_PASSWORD';
 
 
