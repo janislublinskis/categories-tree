@@ -20,4 +20,4 @@ create unique index users_id_uindex
 on users (id);
 
 INSERT INTO `users` (id, username, email, password, created_at) VALUES
-(1, 'Admin', 'admin@app.test', 'Aa_00000', '2020-12-15 18:56:46');
+(1, 'Admin', 'admin@app.test', '43af55ba0e7f82395100e34839a5acb4', '2020-12-15 18:56:46');
